@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+  <html lang="en-ca">
+  <head>
+  <link rel="stylesheet" href="mystyle.css">
+  <meta charset="utf-8">.
+  <meta name="description" content="Putting images this time">
+  <meta name="keywords" content="MHTS, website">
+  <meta name="author" content="David Camargo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello, World! </title>
+  </head>
+  <body>
+  
+  <h1>Please place your age </h1>
+  
+  <input id="age" value="0" />
+  <button onclick="myFunction()">Age</button>
+  <p id="demo"></p>
+
+  
+  <script>
+  function myFunction() {
+  var greeting, age;
+  var age = document.getElementById("age").value;
+  if (age < 13) {
+    greeting = "Only G Rated Movies ";
+  } else if (age < 18) {
+    greeting = "Only PG13 and under rated movies";
+  } else if (age > 18) {
+    greeting = "Allowed To watch any rated movies";
+  }
+  document.getElementById("demo").innerHTML = greeting;
+}
+</script>
+
+
+
+
+  </body>
+</html>
